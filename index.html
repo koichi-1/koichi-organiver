@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Koichi Project — Wedding & Family Event Organizer. Crafting Your Special Moments with elegance and precision." />
+  <meta name="keywords" content="wedding organizer, event organizer, aqiqah, khitanan, birthday, koichi project" />
+  <meta property="og:title" content="Koichi Project — Crafting Your Special Moments" />
+  <meta property="og:description" content="Wedding & Family Event Organizer yang menghadirkan momen tak terlupakan." />
+  <meta property="og:type" content="website" />
+  <title>Koichi Project — Crafting Your Special Moments</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="light">
+
+  <!-- ============================================================
+       LOADER — Japanese Minimal Loading Screen
+  ============================================================ -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__kanji">幸</div>
+      <div class="loader__line"></div>
+      <p class="loader__text">Koichi Project</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <!-- Logo -->
+      <a href="#hero" class="navbar__logo" aria-label="Koichi Project Home">
+        <span class="navbar__logo-kanji">幸</span>
+        <span class="navbar__logo-text">Koichi Project</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="#about"    class="navbar__link">About</a>
+        <a href="#services" class="navbar__link">Services</a>
+        <a href="#workflow" class="navbar__link">Workflow</a>
+        <a href="#team"     class="navbar__link">Team</a>
+        <a href="#packages" class="navbar__link">Packages</a>
+        <a href="#contact"  class="navbar__link">Contact</a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="navbar__controls">
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="theme-toggle__icon theme-toggle__icon--light">☀</span>
+          <span class="theme-toggle__icon theme-toggle__icon--dark">月</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Mobile Navigation" aria-hidden="true">
+      <a href="#about"    class="navbar__mobile-link">About</a>
+      <a href="#services" class="navbar__mobile-link">Services</a>
+      <a href="#workflow" class="navbar__mobile-link">Workflow</a>
+      <a href="#team"     class="navbar__mobile-link">Team</a>
+      <a href="#packages" class="navbar__mobile-link">Packages</a>
+      <a href="#contact"  class="navbar__mobile-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <!-- Decorative background elements -->
+      <div class="hero__bg-pattern" aria-hidden="true">
+        <svg class="hero__wave" viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,200 C240,100 480,300 720,200 C960,100 1200,300 1440,200 L1440,400 L0,400 Z" fill="currentColor" opacity="0.03"/>
+          <path d="M0,250 C360,150 720,350 1080,250 C1260,200 1380,280 1440,250 L1440,400 L0,400 Z" fill="currentColor" opacity="0.04"/>
+        </svg>
+        <!-- Vertical Japanese decorative lines -->
+        <div class="hero__deco-line hero__deco-line--1" aria-hidden="true"></div>
+        <div class="hero__deco-line hero__deco-line--2" aria-hidden="true"></div>
+        <!-- Floating kanji -->
+        <div class="hero__kanji-float" aria-hidden="true">慶</div>
+      </div>
+
+      <div class="hero__content fade-in">
+        <!-- Japanese sub-label -->
+        <p class="hero__label">幸一プロジェクト — KOICHI PROJECT</p>
+
+        <!-- Main heading -->
+        <h1 class="hero__heading">
+          Crafting Your<br/>
+          <em>Special Moments</em>
+        </h1>
+
+        <!-- Divider -->
+        <div class="hero__divider" aria-hidden="true">
+          <span></span><span class="hero__divider-dot"></span><span></span>
+        </div>
+
+        <!-- Subtext -->
+        <p class="hero__sub">Wedding &amp; Family Event Organizer</p>
+        <p class="hero__desc">Kami hadir untuk mewujudkan setiap momen berharga dalam hidup Anda menjadi kenangan yang abadi — dengan sentuhan elegan dan penuh makna.</p>
+
+        <!-- CTA Buttons -->
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">Book Consultation</a>
+          <a href="https://wa.me/+62895607066363?text=Halo%20Koichi%20Project%2C%20saya%20ingin%20konsultasi%20event." class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <!-- Left: Decorative Visual -->
+          <div class="about__visual fade-in">
+            <div class="about__frame">
+              <div class="about__frame-inner">
+              <img src="assets/images/about-photo.png" alt="Koichi Project Team"
+    style="width:100%;height:100%;object-fit:cover;border-radius:8px;position:absolute;inset:0;" />
+                </div>
+              </div>
+              <div class="about__frame-badge">Est. 2 Oktober 2025</div>
+            </div>
+          </div>
+
+          <!-- Right: Text -->
+          <div class="about__content fade-in">
+            <p class="section__eyebrow">About Us — 私たちについて</p>
+            <h2 class="section__heading">Menghadirkan Momen<br/><em>Yang Tak Terlupakan</em></h2>
+            <div class="about__divider" aria-hidden="true"></div>
+            <p class="about__text">
+              Koichi Project lahir dari sebuah impian sederhana: menjadikan setiap perayaan hidup sebagai karya yang bermakna. Didirikan pada <strong>2 Oktober 2025</strong> oleh empat sahabat — Arif, Rulli, Lisna, dan Syifa — kami membangun Koichi Project dengan satu keyakinan: bahwa setiap momen istimewa layak dirayakan dengan indah.
+            </p>
+            <p class="about__text">
+              Nama "Koichi" terinspirasi dari filosofi Jepang tentang kebahagiaan (<em>幸 / Kō</em>) dan nilai satu hal yang bermakna (<em>一 / Ichi</em>). Karena bagi kami, satu momen yang terencana dengan baik, jauh lebih berharga dari seribu hal yang terlupakan.
+            </p>
+
+            <!-- Focus list -->
+            <ul class="about__focus-list">
+              <li><span class="about__focus-dot"></span>Wedding Organizer</li>
+              <li><span class="about__focus-dot"></span>Aqiqah Event</li>
+              <li><span class="about__focus-dot"></span>Khitan Event</li>
+              <li><span class="about__focus-dot"></span>Birthday Celebration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES SECTION
+    ============================================================ -->
+    <section class="services section section--alt" id="services">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">Our Services — サービス</p>
+          <h2 class="section__heading">Apa Yang Kami <em>Tawarkan</em></h2>
+          <p class="section__sub">Dari konsep hingga eksekusi, kami hadir di setiap langkah perjalanan Anda.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- Card 1 -->
+          <article class="service-card fade-in" tabindex="0">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3 class="service-card__title">Wedding Organizer</h3>
+            <p class="service-card__desc">Wujudkan pernikahan impian Anda dengan konsep yang personal, detail yang sempurna, dan eksekusi yang tanpa hambatan.</p>
+            <span class="service-card__num">01</span>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card fade-in" tabindex="0">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="service-card__title">Aqiqah Event</h3>
+            <p class="service-card__desc">Rayakan kehadiran buah hati dengan penuh syukur — kami atur dari dekorasi, katering, hingga kelengkapan acara Aqiqah.</p>
+            <span class="service-card__num">02</span>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card fade-in" tabindex="0">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="service-card__title">Khitan Event</h3>
+            <p class="service-card__desc">Perayaan khitanan yang berkesan untuk si kecil — penuh kegembiraan dengan suasana yang nyaman dan terorganisir.</p>
+            <span class="service-card__num">03</span>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card fade-in" tabindex="0">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="service-card__title">Birthday Event</h3>
+            <p class="service-card__desc">Dari ulang tahun anak-anak hingga milestone dewasa — kami rancang pesta yang hangat, meriah, dan penuh kenangan.</p>
+            <span class="service-card__num">04</span>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card fade-in" tabindex="0">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="service-card__title">Vendor Coordination</h3>
+            <p class="service-card__desc">Jaringan vendor terpercaya kami pastikan semua kebutuhan acara Anda terpenuhi — dari katering, fotografer, hingga hiburan.</p>
+            <span class="service-card__num">05</span>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card fade-in" tabindex="0">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="service-card__title">Decoration Management</h3>
+            <p class="service-card__desc">Dekorasi bukan sekadar hiasan — ini adalah cerita. Kami hadirkan konsep dekorasi yang mencerminkan jiwa dan kepribadian Anda.</p>
+            <span class="service-card__num">06</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WORKFLOW SECTION
+    ============================================================ -->
+    <section class="workflow section" id="workflow">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">How We Work — プロセス</p>
+          <h2 class="section__heading">Proses Kerja <em>Kami</em></h2>
+          <p class="section__sub">Setiap langkah dirancang dengan cermat untuk memastikan hari istimewa Anda berjalan sempurna.</p>
+        </div>
+
+        <div class="workflow__timeline">
+
+          <div class="workflow__item fade-in">
+            <div class="workflow__left">
+              <div class="workflow__step-num">01</div>
+            </div>
+            <div class="workflow__line-wrap" aria-hidden="true">
+              <div class="workflow__dot"></div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__right">
+              <h3 class="workflow__title">Consultation</h3>
+              <p class="workflow__desc">Kami mendengarkan setiap detail keinginan Anda. Sesi konsultasi gratis untuk memahami visi dan kebutuhan acara Anda secara menyeluruh.</p>
+            </div>
+          </div>
+
+          <div class="workflow__item fade-in">
+            <div class="workflow__left">
+              <div class="workflow__step-num">02</div>
+            </div>
+            <div class="workflow__line-wrap" aria-hidden="true">
+              <div class="workflow__dot"></div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__right">
+              <h3 class="workflow__title">Concept Design</h3>
+              <p class="workflow__desc">Tim kreatif kami merancang konsep acara yang sesuai dengan kepribadian dan selera Anda — dari tema hingga detail terkecil.</p>
+            </div>
+          </div>
+
+          <div class="workflow__item fade-in">
+            <div class="workflow__left">
+              <div class="workflow__step-num">03</div>
+            </div>
+            <div class="workflow__line-wrap" aria-hidden="true">
+              <div class="workflow__dot"></div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__right">
+              <h3 class="workflow__title">Vendor Selection</h3>
+              <p class="workflow__desc">Kami menghubungkan Anda dengan vendor-vendor terbaik dan terpercaya yang sesuai dengan budget serta estetika acara Anda.</p>
+            </div>
+          </div>
+
+          <div class="workflow__item fade-in">
+            <div class="workflow__left">
+              <div class="workflow__step-num">04</div>
+            </div>
+            <div class="workflow__line-wrap" aria-hidden="true">
+              <div class="workflow__dot"></div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__right">
+              <h3 class="workflow__title">Technical Meeting</h3>
+              <p class="workflow__desc">Satu bulan sebelum hari H, kami menggelar rapat teknis bersama seluruh vendor dan keluarga untuk memastikan semua koordinasi berjalan mulus.</p>
+            </div>
+          </div>
+
+          <div class="workflow__item fade-in">
+            <div class="workflow__left">
+              <div class="workflow__step-num">05</div>
+            </div>
+            <div class="workflow__line-wrap" aria-hidden="true">
+              <div class="workflow__dot"></div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__right">
+              <h3 class="workflow__title">Execution</h3>
+              <p class="workflow__desc">Hari istimewa Anda telah tiba. Tim kami hadir sejak pagi hingga selesai — memastikan setiap momen berjalan sesuai rencana dengan penuh ketenangan.</p>
+            </div>
+          </div>
+
+          <div class="workflow__item fade-in">
+            <div class="workflow__left">
+              <div class="workflow__step-num">06</div>
+            </div>
+            <div class="workflow__line-wrap" aria-hidden="true">
+              <div class="workflow__dot"></div>
+            </div>
+            <div class="workflow__right">
+              <h3 class="workflow__title">After Event</h3>
+              <p class="workflow__desc">Komitmen kami tidak berhenti di hari H. Kami melakukan evaluasi pasca acara dan memastikan Anda puas dengan setiap aspek pelayanan kami.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TEAM SECTION
+    ============================================================ -->
+    <section class="team section section--alt" id="team">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">Meet the Founders — 創設者</p>
+          <h2 class="section__heading">Orang-Orang Di Balik <em>Koichi</em></h2>
+          <p class="section__sub">Empat sahabat dengan satu visi — menjadikan setiap momen sebagai kenangan abadi.</p>
+        </div>
+
+        <div class="team__grid">
+
+          <article class="team-card fade-in">
+            <div class="team-card__avatar" aria-hidden="true">
+              <div class="team-card__avatar-inner">
+                <img src="assets/images/arif.png" alt="Koichi Project Team" 
+                style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+              </div>
+              <div class="team-card__avatar-ring"></div>
+            </div>
+            <h3 class="team-card__name">Arif</h3>
+            <p class="team-card__role">Co-Founder</p>
+            <p class="team-card__kanji" aria-hidden="true">誠</p>
+          </article>
+
+          <article class="team-card fade-in">
+            <div class="team-card__avatar" aria-hidden="true">
+              <div class="team-card__avatar-inner">
+                <span class="team-card__initial">R</span>
+              </div>
+              <div class="team-card__avatar-ring"></div>
+            </div>
+            <h3 class="team-card__name">Rulli</h3>
+            <p class="team-card__role">Co-Founder</p>
+            <p class="team-card__kanji" aria-hidden="true">力</p>
+          </article>
+
+          <article class="team-card fade-in">
+            <div class="team-card__avatar" aria-hidden="true">
+              <div class="team-card__avatar-inner">
+                <span class="team-card__initial">L</span>
+              </div>
+              <div class="team-card__avatar-ring"></div>
+            </div>
+            <h3 class="team-card__name">Lisna</h3>
+            <p class="team-card__role">Co-Founder</p>
+            <p class="team-card__kanji" aria-hidden="true">美</p>
+          </article>
+
+          <article class="team-card fade-in">
+            <div class="team-card__avatar" aria-hidden="true">
+              <div class="team-card__avatar-inner">
+                <span class="team-card__initial">S</span>
+              </div>
+              <div class="team-card__avatar-ring"></div>
+            </div>
+            <h3 class="team-card__name">Syifa</h3>
+            <p class="team-card__role">Co-Founder</p>
+            <p class="team-card__kanji" aria-hidden="true">癒</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PACKAGES SECTION
+    ============================================================ -->
+    <section class="packages section" id="packages">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">Our Package — パッケージ</p>
+          <h2 class="section__heading">Pilihan <em>Paket</em> Kami</h2>
+          <p class="section__sub">Transparan, sesuai kebutuhan, tanpa kejutan biaya tersembunyi.</p>
+        </div>
+
+        <div class="packages__grid">
+
+          <!-- Classic Package -->
+          <article class="package-card package-card--featured fade-in">
+            <div class="package-card__badge">Most Popular</div>
+            <div class="package-card__header">
+              <p class="package-card__eyebrow">Classic Package</p>
+              <div class="package-card__price">
+                <span class="package-card__price-label">Mulai dari</span>
+                <span class="package-card__price-value">Rp17.000.000</span>
+              </div>
+            </div>
+            <div class="package-card__divider" aria-hidden="true"></div>
+            <ul class="package-card__features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Full Day Event Coordination
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Konsultasi & Konsep Desain
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Vendor Coordination (3 vendor)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Dekorasi Dasar (Pelaminan / Stage)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Technical Meeting (1x)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Tim Lapangan (4 orang)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Laporan & Evaluasi Pasca Acara
+              </li>
+            </ul>
+            <a href="https://wa.me/+62895607066363?text=Halo%20Koichi%20Project%2C%20saya%20tertarik%20dengan%20Classic%20Package." class="btn btn--primary btn--full" target="_blank" rel="noopener noreferrer">Choose Package</a>
+          </article>
+
+          <!-- Custom Package teaser -->
+          <article class="package-card package-card--custom fade-in">
+            <div class="package-card__header">
+              <p class="package-card__eyebrow">Custom Package</p>
+              <div class="package-card__price">
+                <span class="package-card__price-label">Harga</span>
+                <span class="package-card__price-value">Sesuai Kebutuhan</span>
+              </div>
+            </div>
+            <div class="package-card__divider" aria-hidden="true"></div>
+            <p class="package-card__custom-text">
+              Setiap acara memiliki ceritanya sendiri. Kami siap merancang paket yang benar-benar disesuaikan dengan kebutuhan, tema, dan anggaran Anda — tanpa kompromi pada kualitas.
+            </p>
+            <div class="package-card__kanji" aria-hidden="true">特別</div>
+            <a href="https://wa.me/+62895607066363?text=Halo%20Koichi%20Project%2C%20saya%20ingin%20konsultasi%20custom%20package." class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Konsultasi Sekarang</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="contact section section--alt" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+
+          <!-- Left: Text -->
+          <div class="contact__text fade-in">
+            <p class="section__eyebrow">Get In Touch — お問い合わせ</p>
+            <h2 class="section__heading">Mari Wujudkan<br/><em>Momen Anda</em></h2>
+            <p class="contact__desc">Ceritakan kepada kami tentang acara impian Anda. Kami siap mendengarkan dan membantu mewujudkannya menjadi kenyataan yang indah.</p>
+
+            <div class="contact__info">
+              <a href="https://instagram.com/koichiproject_" class="contact__info-item" target="_blank" rel="noopener noreferrer">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </div>
+                <div>
+                  <span class="contact__info-label">Instagram</span>
+                  <span class="contact__info-value">@koichiproject_</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/+62895607066363" class="contact__info-item" target="_blank" rel="noopener noreferrer">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <div>
+                  <span class="contact__info-label">WhatsApp</span>
+                  <span class="contact__info-value">+62 895-6070-66363</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: CTA Card -->
+          <div class="contact__cta-card fade-in">
+            <div class="contact__cta-inner">
+              <div class="contact__cta-kanji" aria-hidden="true">幸</div>
+              <h3 class="contact__cta-title">Siap Memulai?</h3>
+              <p class="contact__cta-desc">Konsultasi pertama Anda gratis. Hubungi kami sekarang dan biarkan kami menjadikan momen Anda luar biasa.</p>
+              <a href="https://wa.me/+62895607066363?text=Halo%20Koichi%20Project%2C%20saya%20ingin%20konsultasi%20event pernikahan%20saya." class="btn btn--primary btn--full contact__cta-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Chat di WhatsApp Sekarang
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__kanji" aria-hidden="true">幸</span>
+          <span class="footer__name">Koichi Project</span>
+        </div>
+        <p class="footer__tagline"><em>Crafting Your Special Moments</em></p>
+        <p class="footer__copy">&copy; 2025 Koichi Project. Dibuat dengan 愛 oleh Arif, Rulli, Lisna &amp; Syifa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
